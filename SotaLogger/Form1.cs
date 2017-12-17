@@ -32,11 +32,12 @@ namespace SotaLogger
             switch (myCallComboBox.Text)
             {
                 case "M0BLF/P": { dbName = "log4om_m0blf"; break; }
-                case "Mw0BLF/P": { dbName = "log4om_gw"; break; }
-                case "MM0BLF/P": { dbName = "log4om_mm"; break; }
-                case "F/MM0BLF/P": { dbName = "log4om_f"; break; }
-                case "ON/MM0BLF/P": { dbName = "log4om_on"; break; }
-                case "TF/MM0BLF/P": { dbName = "log4om_tf"; break; }
+                case "MW0BLF/P": { dbName = "log4om_gw"; break; }
+                case "MM0BLF/P": { dbName = "log4om_gm"; break; }
+                case "F/M0BLF/P": { dbName = "log4om_f"; break; }
+                case "FP/M0BLF/P": { dbName = "log4om_fp"; break; }
+                case "ON/M0BLF/P": { dbName = "log4om_on"; break; }
+                case "TF/M0BLF/P": { dbName = "log4om_tf"; break; }
             }
             if (dbName.Length > 1)
             {

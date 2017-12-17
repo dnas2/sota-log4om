@@ -126,13 +126,13 @@ namespace SotaLogger
             retVal += "'" + (frequency*1000).ToString() + "', "; 
             retVal += "'" + mode + "', ";
             retVal += "" + timeOn.ToString("yyyyMMdd") + ", ";
-            retVal += "" + timeOn.ToString("HHmm") + ", ";
+            retVal += "'" + timeOn.ToString("HHmmss") + "', ";
             retVal += "'" + grid + "', ";
             retVal += "'Dom', 'M0BLF', 'M0BLF', ";
             retVal += "'" + myCall + "', ";
             retVal += "" + rstRx + ", ";
             retVal += "" + rstTx + ", ";
-            retVal += "" + timeOn.ToString("HHmm") + ", ";
+            retVal += "'" + timeOn.ToString("HHmmss") + "', ";
             retVal += "true, ";
             retVal += "" + power + ", ";
             retVal += "'" + sotaRef + "', ";
