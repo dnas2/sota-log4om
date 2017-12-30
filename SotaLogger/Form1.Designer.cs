@@ -115,6 +115,8 @@
             this.exportCsvButton = new System.Windows.Forms.Button();
             this.databaseSaveButton = new System.Windows.Forms.Button();
             this.addQsoButton = new System.Windows.Forms.Button();
+            this.iotaLabel = new System.Windows.Forms.Label();
+            this.iotaTextBox = new System.Windows.Forms.TextBox();
             this.configGroupBox.SuspendLayout();
             this.qsoGroupBox.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -123,6 +125,8 @@
             // 
             // configGroupBox
             // 
+            this.configGroupBox.Controls.Add(this.iotaTextBox);
+            this.configGroupBox.Controls.Add(this.iotaLabel);
             this.configGroupBox.Controls.Add(this.dateTimePicker1);
             this.configGroupBox.Controls.Add(this.dateLabel);
             this.configGroupBox.Controls.Add(this.dbConnectButton);
@@ -1024,6 +1028,23 @@
             this.addQsoButton.UseVisualStyleBackColor = true;
             this.addQsoButton.Click += new System.EventHandler(this.addQsoButton_Click);
             // 
+            // iotaLabel
+            // 
+            this.iotaLabel.AutoSize = true;
+            this.iotaLabel.Location = new System.Drawing.Point(395, 49);
+            this.iotaLabel.Name = "iotaLabel";
+            this.iotaLabel.Size = new System.Drawing.Size(35, 13);
+            this.iotaLabel.TabIndex = 9;
+            this.iotaLabel.Text = "IOTA:";
+            // 
+            // iotaTextBox
+            // 
+            this.iotaTextBox.Location = new System.Drawing.Point(436, 46);
+            this.iotaTextBox.Name = "iotaTextBox";
+            this.iotaTextBox.Size = new System.Drawing.Size(100, 20);
+            this.iotaTextBox.TabIndex = 10;
+            this.iotaTextBox.Text = "EU-005";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1138,6 +1159,8 @@
         private System.Windows.Forms.Label qso1SotaRx;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox sotaRxTextBox;
+        private System.Windows.Forms.TextBox iotaTextBox;
+        private System.Windows.Forms.Label iotaLabel;
     }
 }
 

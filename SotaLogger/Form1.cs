@@ -103,6 +103,7 @@ namespace SotaLogger
             tmpQso.equipmentString = equipmentComboBox.Text;
             tmpQso.parseEquipmentString();
             tmpQso.setFrequencyFromBandMode();
+            tmpQso.myIota = iotaTextBox.Text;
             allQsos.Add(tmpQso);
             drawQsoTable();
             if (sotaTextBox.Text.Length > 1)

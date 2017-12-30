@@ -21,6 +21,7 @@ namespace SotaLogger
         public string sotaRef;
         public string sotaRefRx;
         public string grid;
+        public string myIota;
 
         internal void parseEquipmentString()
         {
@@ -112,7 +113,7 @@ namespace SotaLogger
 
         internal string AddToMySqlString()
         {
-            string retVal = "INSERT INTO `log` (QsoId, `Call`, Band, Freq,`Mode`, QSODate, TimeOn,MyGridSquare,MyName,TheOperator,OwnerCallsign,StationCallsign,RstRcvd,RstSent,TimeOff,Portable,TxPwrDecimal,MySotaRef,SotaRef,QslMsg) VALUES (";
+            string retVal = "INSERT INTO `log` (QsoId, `Call`, Band, Freq,`Mode`, QSODate, TimeOn,MyGridSquare,MyName,TheOperator,OwnerCallsign,StationCallsign,RstRcvd,RstSent,TimeOff,Portable,TxPwrDecimal,MySotaRef,SotaRef,Myiota,QslMsg) VALUES (";
             retVal += "" + DateTime.Now.ToString("yyyyMMddHHmmssfff") + ", ";
             retVal += "'" + callsign + "', ";
             if (band > 1)
@@ -137,6 +138,7 @@ namespace SotaLogger
             retVal += "" + power + ", ";
             retVal += "'" + sotaRef + "', ";
             retVal += "'" + sotaRefRx + "', ";
+            retVal += "'" + myIota + "', ";
             retVal += "'My QTH SOTA: " + sotaRef + " (" + grid + ")'); ";
             return retVal;
         }
