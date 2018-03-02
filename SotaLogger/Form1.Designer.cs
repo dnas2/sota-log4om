@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.configGroupBox = new System.Windows.Forms.GroupBox();
+            this.iotaTextBox = new System.Windows.Forms.TextBox();
+            this.iotaLabel = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateLabel = new System.Windows.Forms.Label();
             this.dbConnectButton = new System.Windows.Forms.Button();
@@ -115,8 +117,6 @@
             this.exportCsvButton = new System.Windows.Forms.Button();
             this.databaseSaveButton = new System.Windows.Forms.Button();
             this.addQsoButton = new System.Windows.Forms.Button();
-            this.iotaLabel = new System.Windows.Forms.Label();
-            this.iotaTextBox = new System.Windows.Forms.TextBox();
             this.configGroupBox.SuspendLayout();
             this.qsoGroupBox.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -142,6 +142,23 @@
             this.configGroupBox.TabIndex = 0;
             this.configGroupBox.TabStop = false;
             this.configGroupBox.Text = "Configuration";
+            // 
+            // iotaTextBox
+            // 
+            this.iotaTextBox.Location = new System.Drawing.Point(436, 46);
+            this.iotaTextBox.Name = "iotaTextBox";
+            this.iotaTextBox.Size = new System.Drawing.Size(100, 20);
+            this.iotaTextBox.TabIndex = 10;
+            this.iotaTextBox.Text = "EU-005";
+            // 
+            // iotaLabel
+            // 
+            this.iotaLabel.AutoSize = true;
+            this.iotaLabel.Location = new System.Drawing.Point(395, 49);
+            this.iotaLabel.Name = "iotaLabel";
+            this.iotaLabel.Size = new System.Drawing.Size(35, 13);
+            this.iotaLabel.TabIndex = 9;
+            this.iotaLabel.Text = "IOTA:";
             // 
             // dateTimePicker1
             // 
@@ -208,6 +225,7 @@
             "M0BLF/P",
             "MM0BLF/P",
             "MW0BLF/P",
+            "EI/M0BLF/P",
             "F/M0BLF/P",
             "FP/M0BLF/P",
             "ON/M0BLF/P",
@@ -1027,23 +1045,6 @@
             this.addQsoButton.Text = "Add QSO";
             this.addQsoButton.UseVisualStyleBackColor = true;
             this.addQsoButton.Click += new System.EventHandler(this.addQsoButton_Click);
-            // 
-            // iotaLabel
-            // 
-            this.iotaLabel.AutoSize = true;
-            this.iotaLabel.Location = new System.Drawing.Point(395, 49);
-            this.iotaLabel.Name = "iotaLabel";
-            this.iotaLabel.Size = new System.Drawing.Size(35, 13);
-            this.iotaLabel.TabIndex = 9;
-            this.iotaLabel.Text = "IOTA:";
-            // 
-            // iotaTextBox
-            // 
-            this.iotaTextBox.Location = new System.Drawing.Point(436, 46);
-            this.iotaTextBox.Name = "iotaTextBox";
-            this.iotaTextBox.Size = new System.Drawing.Size(100, 20);
-            this.iotaTextBox.TabIndex = 10;
-            this.iotaTextBox.Text = "EU-005";
             // 
             // MainForm
             // 
