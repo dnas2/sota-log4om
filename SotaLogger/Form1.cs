@@ -34,6 +34,7 @@ namespace SotaLogger
                 case "M0BLF/P": { dbName = "log4om_m0blf"; break; }
                 case "MW0BLF/P": { dbName = "log4om_gw"; break; }
                 case "MM0BLF/P": { dbName = "log4om_gm"; break; }
+                case "CT9/M0BLF/P": { dbName = "log4om_ct9"; break; }
                 case "EI/M0BLF/P": { dbName = "log4om_ei"; break; }
                 case "F/M0BLF/P": { dbName = "log4om_f"; break; }
                 case "FP/M0BLF/P": { dbName = "log4om_fp"; break; }
