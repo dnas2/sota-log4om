@@ -223,6 +223,7 @@
             this.myCallComboBox.FormattingEnabled = true;
             this.myCallComboBox.Items.AddRange(new object[] {
             "M0BLF/P",
+            "MD0BLF/P",
             "MM0BLF/P",
             "MW0BLF/P",
             "CT9/M0BLF/P",
